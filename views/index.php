@@ -191,7 +191,7 @@ include "header.php";
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="../public/photos/aswan1.jpg" class="d-block w-100" alt="..." width="100%">
+                <img src="../public/photos/fayez roster.jpeg" class="d-block w-100" alt="..." width="100%">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -323,9 +323,10 @@ include "header.php";
 
     <div class="row">
         <div class="col-md text-center">
-            <h6 class="text-center mb-4" style="font-weight: normal;">BOOK</h6>
-            <h1>Book Your Flight Now</h1>
+            <h6 class="text-center mb-4" style="font-weight: normal;">Products</h6>
+            <h1>Our Organic Products</h1>
         </div>
+       
     </div>
     <div class="container products-carousel" style="margin-top: 5px;">
         <div class="row">

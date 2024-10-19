@@ -9,14 +9,14 @@ class Routere
          echo $currentUri;*/
 
         $path = '/' . ltrim($path, '/');
-        $root = '/tourism/views/index';
+        $root = '/fayez2/views/index';
         $id = null; // Initialize $id here
 
-        if (strpos($path, '/tourism/views/cart_display?remove=') !== false) {
-            $pattern = '/\/tourism\/views\/(cart_display(?:\?remove=)?)(\d*)/';
+        if (strpos($path, '/fayez2/views/cart_display?remove=') !== false) {
+            $pattern = '/\/fayez2\/views\/(cart_display(?:\?remove=)?)(\d*)/';
         } else {
 
-            $pattern = '/\/tourism\/views\/(deleteflight|edithotels|deletehotel|edituser|deleteuser|makeuser|makeadmin|hotel-details|editflight|deletetrip|edittrip|editbooking|deletebooking)\?id=(\d+)/';
+            $pattern = '/\/fayez2\/views\/(deleteflight|edithotels|deletehotel|edituser|deleteuser|makeuser|makeadmin|hotel-details|editflight|deletetrip|edittrip|editbooking|deletebooking)\?id=(\d+)/';
         }
         if (preg_match($pattern, $path, $matches)) {
             // Extract the 'id' value from the matched URL
@@ -35,169 +35,169 @@ class Routere
         if ($path === $root) {
             require '../views/index.php';
             exit();
-        } elseif ($path === '/tourism/views/index') {
+        } elseif ($path === '/fayez2/views/index') {
             require '../views/index.php';
             exit();
-        } elseif ($path === '/tourism/views/flights') {
+        } elseif ($path === '/fayez2/views/flights') {
             require '../views/flights.php';
             exit();
         }
-        elseif ($path === '/tourism/views/trip') {
-            require '../views/tripp.php';
-            exit();
-        }
-        elseif ($path === '/tourism/views/checkout') {
+        elseif ($path === '/fayez2/views/checkout') {
             require '../views/checkout.php';
             exit();
         }
-        elseif ($path === '/tourism/views/cart') {
+        elseif ($path === '/fayez2/views/about%20us') {
+            require '../views/about.php';
+            exit();
+        }
+        elseif ($path === '/fayez2/views/cart') {
             require '../views/cart.php';
             exit();
         }
-        elseif ($path === '/tourism/views/mybookings') {
+        elseif ($path === '/fayez2/views/mybookings') {
             require '../views/mybookings.php';
             exit();
         }
-        elseif ($path === '/tourism/views/login') {
+        elseif ($path === '/fayez2/views/login') {
             require '../views/login.php';
             exit();
         }
-        elseif ($path === '/tourism/views/bookings') {
+        elseif ($path === '/fayez2/views/bookings') {
             require '../views/bookings.php';
             exit();
         }
-        elseif ($path === '/tourism/views/addbooking') {
+        elseif ($path === '/fayez2/views/addbooking') {
             require '../views/addbooking.php';
             exit();
         }
-        elseif ($path === '/tourism/views/signup') {
+        elseif ($path === '/fayez2/views/signup') {
             require '../views/signup.php';
             exit();
         }
-        elseif ($path === '/tourism/views/forgetpassword') {
+        elseif ($path === '/fayez2/views/forgetpassword') {
             require '../views/forgetpassword.php';
             exit();
         }
-        elseif ($path === '/tourism/views/otp') {
+        elseif ($path === '/fayez2/views/otp') {
             require '../views/otp.php';
             exit();
-        } elseif ($path === '/tourism/views/resetpassword') {
+        } elseif ($path === '/fayez2/views/resetpassword') {
             require '../views/resetpassword.php';
             exit();
         }
-        elseif ($path === '/tourism/views/logout') {
+        elseif ($path === '/fayez2/views/logout') {
             require '../views/logout.php';
             exit();
         }
-        elseif ($path === '/tourism/views/profilesettings') {
+        elseif ($path === '/fayez2/views/profilesettings') {
             require '../views/profilesettings.php';
             exit();
         }
-        elseif ($path === '/tourism/views/hotels') {
+        elseif ($path === '/fayez2/views/hotels') {
             require '../views/hotels.php';
             exit();
         }
-        elseif ($path === '/tourism/views/trips') {
+        elseif ($path === '/fayez2/views/trips') {
             require '../views/trips.php';
             exit();
         }
-        elseif ($path === '/tourism/views/users') {
+        elseif ($path === '/fayez2/views/users') {
             require '../views/users.php';
             exit();
         }
-        elseif ($path === '/tourism/views/admindashboard') {
+        elseif ($path === '/fayez2/views/admindashboard') {
             require '../views/admindashboard.php';
             exit();
         }
-        elseif ($path === '/tourism/views/admintrips') {
+        elseif ($path === '/fayez2/views/admintrips') {
             require '../views/admintrips.php';
             exit();
         }
-        elseif ($path === '/tourism/views/adduser') {
+        elseif ($path === '/fayez2/views/adduser') {
             require '../views/adduser.php';
             exit();
         }
-        elseif ($path === '/tourism/views/adminflights') {
+        elseif ($path === '/fayez2/views/adminflights') {
             require '../views/adminflights.php';
             exit();
         }
-        elseif ($path === '/tourism/views/adminhotels') {
+        elseif ($path === '/fayez2/views/adminhotels') {
             require '../views/adminhotels.php';
             exit();
-        }   elseif ($path === '/tourism/views/addhotels') {
+        }   elseif ($path === '/fayez2/views/addhotels') {
             require '../views/addhotels.php';
             exit();
-        }elseif ($path === '/tourism/views/cart') {
+        }elseif ($path === '/fayez2/views/cart') {
             require '../views/cart.php';
             exit();
         }
-        elseif ($path === '/tourism/views/addflight') {
+        elseif ($path === '/fayez2/views/addflight') {
             require '../views/addflight.php';
             exit();
         }
-        elseif ($path === '/tourism/views/addtripbooking') {
+        elseif ($path === '/fayez2/views/addtripbooking') {
             require '../views/addtripbooking.php';
             exit();
         }
-        elseif ($path === '/tourism/views/Adminphotos?id=' . $id) {
+        elseif ($path === '/fayez2/views/Adminphotos?id=' . $id) {
             require '../views/Adminphotos.php';
             exit();
         }
-        elseif ($path === '/tourism/views/hotel-details?id=' . $id) {
+        elseif ($path === '/fayez2/views/hotel-details?id=' . $id) {
             require '../views/hotel-details.php';
             exit();
-        } elseif ($path === '/tourism/views/cart_display?remove=' . $id) {
+        } elseif ($path === '/fayez2/views/cart_display?remove=' . $id) {
             require '../views/cart_display.php';
             exit();
-        }elseif ($path === '/tourism/views/cancelorder?id=' . $id) {
+        }elseif ($path === '/fayez2/views/cancelorder?id=' . $id) {
             require '../views/cancelorder.php';
             exit();
-        }elseif ($path === '/tourism/views/editreview?id=' . $id) {
+        }elseif ($path === '/fayez2/views/editreview?id=' . $id) {
             require '../views/editreview.php';
             exit();
-        }elseif ($path === '/tourism/views/edittrip?id=' . $id) {
+        }elseif ($path === '/fayez2/views/edittrip?id=' . $id) {
             require '../views/edittrip.php';
             exit();
-        }elseif ($path === '/tourism/views/deletetrip?id=' . $id) {
+        }elseif ($path === '/fayez2/views/deletetrip?id=' . $id) {
             require '../views/deletetrip.php';
             exit();
-        }elseif ($path === '/tourism/views/editbooking?id=' . $id) {
+        }elseif ($path === '/fayez2/views/editbooking?id=' . $id) {
             require '../views/editbooking.php';
             exit();
-        }elseif ($path === '/tourism/views/deletebooking?id=' . $id) {
+        }elseif ($path === '/fayez2/views/deletebooking?id=' . $id) {
             require '../views/deletebooking.php';
             exit();
-        } elseif ($path === '/tourism/views/changepictures?id=' . $id) {
+        } elseif ($path === '/fayez2/views/changepictures?id=' . $id) {
             require '../views/changepictures.php';
             exit();
-        }  elseif ($path === '/tourism/views/edithotels?id=' . $id) {
+        }  elseif ($path === '/fayez2/views/edithotels?id=' . $id) {
             require '../views/edithotels.php';
             exit();
-        }  elseif ($path === '/tourism/views/vieworder?id=' . $id) {
+        }  elseif ($path === '/fayez2/views/vieworder?id=' . $id) {
             require '../views/vieworder.php';
             exit();
-        } elseif ($path === '/tourism/views/editflight?id=' . $id) {
+        } elseif ($path === '/fayez2/views/editflight?id=' . $id) {
             require '../views/editflight.php';
             exit();
-        } elseif ($path === '/tourism/views/product?id=' . $id) {
+        } elseif ($path === '/fayez2/views/product?id=' . $id) {
             require '../views/product.php';
             exit();
-        } elseif ($path === '/tourism/views/deleteflight?id=' . $id) {
+        } elseif ($path === '/fayez2/views/deleteflight?id=' . $id) {
             require '../views/deleteflight.php';
             exit();
-        }elseif ($path === '/tourism/views/deletehotel?id=' . $id) {
+        }elseif ($path === '/fayez2/views/deletehotel?id=' . $id) {
             require '../views/deletehotel.php';
             exit();
-        } elseif ($path === '/tourism/views/edituser?id=' . $id) {
+        } elseif ($path === '/fayez2/views/edituser?id=' . $id) {
             require '../views/edituser.php';
             exit();
-        } elseif ($path === '/tourism/views/deleteuser?id=' . $id) {
+        } elseif ($path === '/fayez2/views/deleteuser?id=' . $id) {
             require '../views/deleteuser.php';
             exit();
-        } elseif ($path === '/tourism/views/makeuser?id=' . $id) {
+        } elseif ($path === '/fayez2/views/makeuser?id=' . $id) {
             require '../views/makeuser.php';
             exit();
-        } elseif ($path === '/tourism/views/makeadmin?id=' . $id) {
+        } elseif ($path === '/fayez2/views/makeadmin?id=' . $id) {
             require '../views/makeadmin.php';
             exit();
         }

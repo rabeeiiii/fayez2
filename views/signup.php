@@ -51,7 +51,7 @@ if (isset($_POST["submit"])) {
         <div class="row">
             <div class="col-md-6 offset-md-3">
                 <div class="text-center mb-4">
-                    <img src="https://egymonuments.gov.eg/Style%20Library/images/new-logo_web.png" alt="egyptlogo" style="max-width: 120px;">
+                    <img src="../public/photos/fayez logo.png" alt="egyptlogo" style="max-width: 220px;">
                 </div>
                 <h2 class="text-center mb-4">Discover the Wonders of Egypt</h2>
                 <p class="text-center mb-4" style="font-weight: normal;">Join us and explore a world of history, mystery, and adventure.</p>
